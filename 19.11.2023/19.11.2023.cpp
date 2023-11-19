@@ -44,13 +44,10 @@ void Task2(FILE* file)
 
 int main() 
 {
-    SetConsoleOutputCP(1251);
-    SetConsoleCP(1251);
-
     //Дан текстовый файл. Найти длину самой длинной строки.
     FILE* file = fopen("file.txt", "r");
     if (file == NULL) {
-        printf("Не удалось открыть файл.\n");
+        printf("Failed to open file.\n");
         return 1;
     }
     Task1(file);
